@@ -88,7 +88,7 @@ import jason.mas2j.parser.ParseException;
 import jason.pl.PlanLibrary;
 import jason.runtime.MASConsoleGUI;
 import jason.runtime.MASConsoleLogFormatter;
-import jason.runtime.MASConsoleLogHandler;
+// import jason.runtime.MASConsoleLogHandler;
 import jason.runtime.RuntimeServices;
 import jason.runtime.RuntimeServicesFactory;
 import jason.runtime.Settings;
@@ -916,6 +916,9 @@ public class RunSpringMAS extends BaseLocalMAS implements RunSpringMASMBean
             } 
             catch (Exception e) 
             {
+            	
+            	logger.error( "Exception here: ", e );
+            	
             	// TODO: no longer needed with slf4j?
             	/* 
                 Handler[] hs = Logger.getLogger("").getHandlers();
@@ -925,8 +928,8 @@ public class RunSpringMAS extends BaseLocalMAS implements RunSpringMASMBean
                 }
                 */
             	
-                Handler h = new MASConsoleLogHandler();
-                h.setFormatter(new MASConsoleLogFormatter());
+                // Handler h = new MASConsoleLogHandler();
+                // h.setFormatter(new MASConsoleLogFormatter());
                 
                 
                 // TODO: no longer needed with slf4j?
