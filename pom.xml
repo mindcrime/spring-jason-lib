@@ -17,8 +17,7 @@
         <repository>
             <id>fogbeam-repo</id>
             <name>Fogbeam Repo</name>
-            <url>
-                https://artifactory.dev.fogbeam.org:443/artifactory/libs-release/</url>
+            <url>https://artifactory.dev.fogbeam.org:443/artifactory/libs-release/</url>
         </repository>
         <repository>
             <id>spring-milestones</id>
@@ -43,8 +42,7 @@
         <repository>
             <id>fogbeam-main</id>
             <name>Fogbeam main repo</name>
-            <url>
-                https://artifactory.dev.fogbeam.org:443/artifactory/libs-release/</url>
+            <url>https://artifactory.dev.fogbeam.org:443/artifactory/libs-release/</url>
         </repository>
     </distributionManagement>
 
